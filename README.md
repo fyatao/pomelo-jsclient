@@ -1,11 +1,9 @@
-#Pomelo javasript client
+#Pomelo javascript client
 
 The javascript client libary for [Pomelo](https://github.com/NetEase/pomelo)
 
 
 ##Usage
-
-**Pomelo API**
 
 ### connect to the server
 ``` javascript
@@ -13,13 +11,13 @@ The javascript client libary for [Pomelo](https://github.com/NetEase/pomelo)
 ```
 example:
 ``` javascript
-			pomelo.init({
-				host: host,
-				port: port,
-				log: true
-			}, function() {
-        console.log('success');
-      });
+pomelo.init({
+host: host,
+port: port,
+log: true
+}, function() {
+console.log('success');
+});
 ```
 
 ### send request to server with callback
