@@ -34,7 +34,7 @@ example:
 	});
 ```
 
-### send request to server with out callback
+### send request to server without callback
 ``` javascript
   pomelo.notify(route, params);
 ```
