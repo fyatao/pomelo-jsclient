@@ -406,30 +406,6 @@ Protocol.decode = function(buffer){
 
 	};
 
-	pomelo.initWebSocket = function(url,cb){;
-
-		socket.on('message', function(data){
-			if(typeof data === 'string') {
-				data = JSON.parse(data);
-			}
-			if(data instanceof Array) {
-				processMessageBatch(pomelo, data);
-			} else {
-				processMessage(pomelo, data);
-			}}
-
-		});
-
-		socket.on('error', function(err) {
-			pomelo.emit('io-error', err);
-			console.log(err);
-		});
-
-		socket.on('disconnect', function(reason) {
-			pomelo.emit('disconnect', reason);
-		});
-
-	};
 
 	pomelo.initWebSocket = function(url,cb){
 
