@@ -3,11 +3,9 @@
   <head>
     <script src="pomeloclient.js"></script>
 		<script>
-		 pomelo.init({'host':'192.168.144.244','port':3010 });
-		 var req = function(){
+		 pomelo.init({'host':'127.0.0.1','port':3010 },function(){
 		 	pomelo.request('move','hello',function(data){console.log(data);});
-		 }
-		 setTimeout(req,3000);
+		 });
 		</script>
   </head>
   <body>
