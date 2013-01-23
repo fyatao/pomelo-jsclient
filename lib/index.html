@@ -4,7 +4,7 @@
     <script src="pomeloclient.js"></script>
 		<script>
 		 pomelo.init({'host':'127.0.0.1','port':3010 },function(){
-		 	pomelo.request('move','hello',function(data){console.log(data);});
+		 	pomelo.request('connector.entryHandler.entry', {'a':1},function(data){console.log(data);});
 		 });
 		</script>
   </head>
