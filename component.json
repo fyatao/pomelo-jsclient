@@ -1,0 +1,13 @@
+{
+  "name": "pomelo-jsclient",
+  "description": "pomelo-jsclient",
+  "keywords": [
+    "pomelo",
+    "jsclient"
+  ],
+  "version": "0.0.1",
+  "scripts": [
+    "lib/pomelo-client.js"
+  ],
+  "repo": "https://github.com/NetEase/pomelo-jsclient"
+}
